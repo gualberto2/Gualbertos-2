@@ -1,0 +1,7 @@
+input[li]:hover{
+    text-decoration:underline;
+}
+
+input[type=submit]:hover{
+    text-decoration:underline;
+}
