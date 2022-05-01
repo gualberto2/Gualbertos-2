@@ -1,4 +1,4 @@
-input[#about-button]:hover{
+input [about-btn]:hover{
     text-decoration:underline;
 }
 
