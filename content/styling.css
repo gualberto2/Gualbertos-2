@@ -1,25 +1,7 @@
-input [about-btn]:hover{
+input [id=about-btn]:hover{
     text-decoration:underline;
 }
 
 input[type=submit]:hover{
     text-decoration:underline;
-}
-
-body {
-	background: #e6e6e6;
-}
-
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #010e80;
-	display: table;
-	width: 100%;
-}
-
-nav li {
-	display: table-cell
 }
