@@ -1,8 +1,8 @@
-.menu-btn,
-.about-btn,
-.catering-btn,
-.apply-btn,
-.contact-us-btn {
+#menu-btn ,
+#about-btn ,
+#catering-btn ,
+#apply-btn ,
+#contact-us-btn  {
     border: 1px solid LightGrey;
     padding: 40px 0px;
     position: relative;
@@ -10,11 +10,11 @@
     width: 100%;
 }
 
-li.menu-btn a ,
-li.about-btn a ,
-li.catering-btn a ,
-li.apply-btn a,
-li.contact-us-btn a {
+#menu-btn a ,
+#about-btn a ,
+#catering-btn a ,
+#apply-btn a,
+#contact-us-btn a {
     background: green;
     border: 1px solid green;
     border-radius: 3px;
@@ -23,13 +23,13 @@ li.contact-us-btn a {
     color: green;
 }
 
-li.menu-btn a:hover,
-li.about-btn a:hover,
-li.catering-btn a:hover,
-li.apply-btn a:hover,
-li.contact-us-button a:hover {
+
+#menu-btn a:hover,
+#about-btn a:hover,
+#catering-btn a:hover,
+#apply-btn a:hover,
+#contact-us-btn a:hover  {
     background: white;
     border: 1px solid green;
     color: red;
 }
-
