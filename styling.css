@@ -7,17 +7,19 @@
 }
 
 .buttons a {
-    background: green;
-    border: 1px solid green;
+    background: red;
+    border: 1px solid red;
     border-radius: 3px;
-    background: white;        
-    border: 1px solid green;
-    color: green;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 14px;
+    text-decoration: none;
 }
 
 
 .buttons a:hover {
     background: white;
-    border: 1px solid green;
+    border: 1px solid red;
     color: red;
 }
