@@ -1,8 +1,8 @@
-#menu-btn ,
-#about-btn ,
-#catering-btn ,
-#apply-btn ,
-#contact-us-btn  {
+#menu-btn,
+#about-btn,
+#catering-btn,
+#apply-btn,
+#contact-us-btn {
     border: 1px solid LightGrey;
     padding: 40px 0px;
     position: relative;
@@ -10,9 +10,9 @@
     width: 100%;
 }
 
-#menu-btn a ,
-#about-btn a ,
-#catering-btn a ,
+#menu-btn a,
+#about-btn a,
+#catering-btn a 
 #apply-btn a,
 #contact-us-btn a {
     background: green;
