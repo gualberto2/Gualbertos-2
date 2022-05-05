@@ -1,0 +1,14 @@
+
+
+.menu-btn a,
+.about-btn a,
+.catering-btn a,
+.apply-btn a,
+.contact-us-btn a{
+    background: green;
+    border: 1px solid green;
+    border-radius: 3px;
+    background: white;        
+    border: 1px solid green;
+    color: green;
+}
