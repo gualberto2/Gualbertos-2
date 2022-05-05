@@ -1,8 +1,8 @@
-class'menu-btn',
-class='about-btn',
-class='catering-btn',
-class='apply-btn',
-class='contact-us-btn' {
+class= "menu-btn',
+class= "about-btn",
+class= "catering-btn",
+class= "apply-btn",
+class= "contact-us-btn" {
     border: 1px solid LightGrey;
     padding: 40px 0px;
     position: relative;
@@ -10,11 +10,11 @@ class='contact-us-btn' {
     width: 100%;
 }
 
-class'menu-btn' a,
-class='about-btn' a,
-class='catering-btn' a,
-class='apply-btn' a,
-class='contact-us-btn' a {
+class= "menu-btn" a ,
+class= "about-btn" a ,
+class= "catering-btn" a ,
+class= "apply-btn" a,
+class= "contact-us-btn" a {
     background: green;
     border: 1px solid green;
     border-radius: 3px;
@@ -23,11 +23,11 @@ class='contact-us-btn' a {
     color: green;
 }
 
-class'menu-btn' a:hover,
-class='about-btn' a:hover,
-class='catering-btn' a:hover,
-class='apply-btn' a:hover,
-class='contact-us-btn' a:hover {
+class= "menu-btn" a:hover,
+class= "about-btn" a:hover,
+class= "catering-btn" a:hover,
+class= "apply-btn" a:hover,
+class= "contact-us-btn" a:hover {
     background: white;
     border: 1px solid green;
     color: red;
