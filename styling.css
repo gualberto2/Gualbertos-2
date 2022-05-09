@@ -1,8 +1,8 @@
 .buttons {
     border: 1px solid LightGrey;
     padding: 40px 0px;
-    position: relative;
-    text-align: center;
+    position: right;
+    text-align: right;
     width: 100%;
 }
 
@@ -22,3 +22,28 @@
     border: 1px solid red;
     color: green;
 }
+
+/*test navigation blocks*/
+
+ul.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+.navigation li {
+    float: left;
+  }
+  
+.navigation li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+.navigation li a:hover {
+    background-color: #111;
