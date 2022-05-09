@@ -33,11 +33,11 @@ ul.navigation {
     background-color: #333;
   }
   
-.navigation li {
+ul.navigation li {
     float: left;
   }
   
-.navigation li a {
+ul.navigation li a {
     display: block;
     color: white;
     text-align: center;
@@ -45,5 +45,6 @@ ul.navigation {
     text-decoration: none;
   }
   
-.navigation li a:hover {
+ul.navigation li a:hover {
     background-color: rgb(24, 23, 23);
+}
