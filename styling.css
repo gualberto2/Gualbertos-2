@@ -1,30 +1,3 @@
-.buttons {
-    border: 1px solid LightGrey;
-    padding: 40px 0px;
-    position: right;
-    text-align: right;
-    width: 100%;
-}
-
-.buttons a {
-    background: red;
-    border: 1px solid red;
-    border-radius: 3px;
-    color: white;
-    margin: 10px;
-    padding: 14px;
-    text-decoration: none;
-}
-
-
-.buttons a:hover {
-    background: white;
-    border: 1px solid red;
-    color: green;
-}
-
-/*test navigation blocks*/
-
 ul.navigation {
     list-style-type: none;
     margin: 0;
@@ -33,11 +6,11 @@ ul.navigation {
     background-color: #333;
   }
   
-ul.navigation li {
+.navigation li {
     float: left;
   }
   
-ul.navigation li a {
+.navigation li a {
     display: block;
     color: white;
     text-align: center;
@@ -45,6 +18,6 @@ ul.navigation li a {
     text-decoration: none;
   }
   
-ul.navigation li a:hover {
-    background-color: rgb(24, 23, 23);
+.navigation li a:hover {
+    background-color: #111;
 }
