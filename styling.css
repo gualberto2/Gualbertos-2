@@ -24,3 +24,10 @@ ul.navigation {
 
 /* for any titles*/
 
+
+
+/* phone number styling */
+#phone-number {
+    font-weight: bold;
+    font-size: 20px;
+}
