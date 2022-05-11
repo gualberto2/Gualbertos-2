@@ -20,11 +20,20 @@ ul.navigation {
   
 .navigation li a:hover {
     background-color: #111;
+    text-decoration: underline;
 }
 
 /* for any titles*/
 
+.header-title {
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid rgb(0, 177, 41);
 
+
+
+}
 
 /* phone number styling */
 #phone-number {
