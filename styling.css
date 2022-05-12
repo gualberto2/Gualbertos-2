@@ -14,8 +14,9 @@ ul.navigation {
     background-color: #333;
   }
   
-.navigation #gualbertos-logo {
+.navigation li a #gualbertos-logo {
     float: left;
+    text-align: left;
     font-size: large;
     color: rgb(0, 170, 0);
 }
