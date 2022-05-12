@@ -21,7 +21,7 @@ ul.navigation {
 }
 
 .navigation li {
-    float: right;
+    float: left;
   }
   
 .navigation li a {
