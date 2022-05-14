@@ -36,27 +36,19 @@ ul.navigation {
     text-decoration: underline;
 }
 
+/* row list */
 .rows-list {
-
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 100px 400px;
+    grid-gap: 10px;
 }
 
 /* icon sizing */
-.uber-eats-icon {
+.uber-eats-icon,
+.postmates-icon,
+.clover-icon
+.grubhub-icon {
     width: 200px;
     height: auto;
   }
-  
-  .postmates-icon {
-    width: 200px;
-    height: auto;
-  }
-  
-  .grubhub-icon {
-    width: 200px;
-    height: auto;
-  }
-  
-  .clover-icon {
-    width: 300px;
-    height: auto;
-  } 
