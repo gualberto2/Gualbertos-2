@@ -36,10 +36,27 @@ ul.navigation {
     text-decoration: underline;
 }
 
-.column-list {
-    column-count: 4;
-    column-gap: 50px;
-    column-rule-style: solid;
-    column-rule-width: auto;
-    column-rule-color: lightgreen;
+.rows-list {
+
 }
+
+/* icon sizing */
+.uber-eats-icon {
+    width: 200px;
+    height: auto;
+  }
+  
+  .postmates-icon {
+    width: 200px;
+    height: auto;
+  }
+  
+  .grubhub-icon {
+    width: 200px;
+    height: auto;
+  }
+  
+  .clover-icon {
+    width: 300px;
+    height: auto;
+  } 
