@@ -47,8 +47,8 @@ ul.navigation {
 /* icon sizing */
 .uber-eats-icon,
 .postmates-icon,
-.clover-icon
-.grubhub-icon {
+.clover-icon,
+.grubhub-icon, {
     width: 200px;
     height: auto;
   }
