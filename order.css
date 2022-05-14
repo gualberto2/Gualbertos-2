@@ -35,3 +35,11 @@ ul.navigation {
     background-color: #111;
     text-decoration: underline;
 }
+
+.column-list {
+    column-count: 4;
+    column-gap: 50px;
+    column-rule-style: solid;
+    column-rule-width: auto;
+    column-rule-color: lightgreen;
+}
