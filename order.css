@@ -35,3 +35,23 @@ ul.navigation {
     background-color: #111;
     text-decoration: underline;
 }
+
+.uber-eats-icon {
+  width: 200px;
+  height: auto;
+}
+
+.postmates-icon {
+  width: 200px;
+  height: auto;
+}
+
+.grubhub-icon {
+  width: 200px;
+  height: auto;
+}
+
+.clover-icon {
+  width: 300px;
+  height: auto;
+}
