@@ -44,7 +44,7 @@ ul.navigation {
     grid-gap: 10px;
 }
 
-/* icon sizing */
+/* icon sizing is still a work in progress
 .uber-eats-icon,
 .postmates-icon,
 .clover-icon,
@@ -52,3 +52,4 @@ ul.navigation {
     width: 200px;
     height: auto;
   }
+ will not be committing until further understood */
