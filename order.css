@@ -44,12 +44,11 @@ ul.navigation {
     grid-gap: 10px;
 }
 
-/* icon sizing is still a work in progress
+
 .uber-eats-icon,
 .postmates-icon,
 .clover-icon,
 .grubhub-icon {
     width: 200px;
-    height: auto;
+    height: 300px;
   }
- will not be committing until further understood */
