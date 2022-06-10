@@ -13,12 +13,11 @@ ul.navigation {
     box-sizing: border-box;
     padding: 20px 5px;
     margin: 0px auto;
-
-
     background-color: #333;
     position: sticky;
     text-align: center;
     overflow: hidden;
+    list-style-type: none;
 }
 
 /* new improved nav stuff */
