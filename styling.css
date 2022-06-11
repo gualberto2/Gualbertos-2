@@ -93,7 +93,7 @@ h3.header-hours h4 ul.header-hours li {
     position: center;
     display: inline;
     text-align: center;
-    border: 3px solid green;
-    
+    border: 3px solid transparent;
+
 
 }
