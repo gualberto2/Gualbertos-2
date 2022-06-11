@@ -38,7 +38,7 @@ ul.gual-logo {
 /* new improved nav stuff */
 
 
-ul.gual-logo {
+ul.gual-logo li {
     float: left;
     font-size: 18px;
     font-weight: bold;
