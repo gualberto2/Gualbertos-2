@@ -23,6 +23,9 @@ html {
 ul.navigation {
     box-sizing: border-box;
     padding: 20px 5px;
+    box-sizing: border-box;
+    padding: 20px 5px;
+    margin: 0px auto;
     background-color: #333;
     position: sticky;
     text-align: center;
@@ -36,6 +39,7 @@ ul.navigation {
 
 
 /* li elements (actual text and stuff) */
+
 /* new improved nav stuff */
 
 
