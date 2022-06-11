@@ -53,9 +53,9 @@ ul.navigation {
 
 
   
-ul.navigation #Gualbertos-logo {
+ul.gual-logo {
     float: left;
-    font-size: 30px;
+    font-size: 18px;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
     color: rgb(0, 170, 0);
@@ -72,6 +72,7 @@ ul.navigation #Gualbertos-logo {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 15px;
   }
   
 .navigation li a:hover {
