@@ -20,7 +20,7 @@ html {
 
 
 /* main nav box */
-ul.navigation {
+ul .navigation {
     box-sizing: border-box;
     padding: 20px 5px;
     box-sizing: border-box;
