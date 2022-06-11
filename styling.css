@@ -20,8 +20,7 @@ html {
 
 
 /* main nav box */
-ul.navigation,
-ul.gual-logo {
+ul.navigation {
     box-sizing: border-box;
     padding: 20px 5px;
     box-sizing: border-box;
@@ -41,7 +40,7 @@ ul.gual-logo {
 
 .gual-logo {
     float: left;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
     color: rgb(0, 170, 0);
@@ -61,8 +60,8 @@ ul.gual-logo {
 .navigation li a:hover {
     background-color: #111;
     text-decoration: underline;
-    text-decoration-color: ;
-    
+    text-decoration-color: green;
+    animation-duration: 2s;
 }
 
 
