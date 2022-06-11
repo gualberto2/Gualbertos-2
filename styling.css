@@ -20,7 +20,8 @@ html {
 
 
 /* main nav box */
-ul .navigation {
+ul.navigation,
+ul.gual-logo {
     box-sizing: border-box;
     padding: 20px 5px;
     box-sizing: border-box;
@@ -34,25 +35,9 @@ ul .navigation {
 }
 /*main nav box */
 
-
-/* li elements (actual text and stuff)*/
-
-
-/* li elements (actual text and stuff) */
-
 /* new improved nav stuff */
 
 
-
-
-
-
-
-
-
-
-
-  
 ul.gual-logo {
     float: left;
     font-size: 18px;
