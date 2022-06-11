@@ -88,6 +88,12 @@ ul.navigation {
 /* hours styling */
 h3.header-hours, 
 h3.header-hours h4 ul.header-hours li {
- font-weight: bolder;
- font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-family: 'Oswald', 'Times New Roman', Times, serif;
+    position: center;
+    display: inline;
+    text-align: center;
+    border: 3px solid green;
+    
+
 }
