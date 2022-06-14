@@ -18,6 +18,12 @@ html {
 
 /* NEW AND IMPROVED NAV STUFF HERE */
 
+body {
+    margin: 0px auto;
+    padding: 0px auto;
+}
+
+
 
 /* main nav box */
 ul.navigation {
