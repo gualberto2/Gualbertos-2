@@ -87,6 +87,8 @@ ul.navigation {
     padding: 5px;
 }
 
+
+
 /* phone number styling */
 #phone-number {
     font-weight: bold;
@@ -106,7 +108,7 @@ h3.body-hours h4 ul.body-hours li {
     border: 3px solid transparent;
 }
 
-h3.body-hours {
+h3.body-hours-header {
     font-size: 30px;
     position: center;
     display: inline-block;
