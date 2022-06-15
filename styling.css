@@ -106,6 +106,7 @@ h3.body-hours h4 ul.body-hours li {
     display: inline;
     text-align: center;
     border: 3px solid transparent;
+    list-style-type: none;
 }
 
 h3.body-hours-header {
