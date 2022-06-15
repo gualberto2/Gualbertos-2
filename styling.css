@@ -116,6 +116,14 @@ h3.body-hours-header {
     border: 1px solid transparent
 }
 
+div.body-hours-div {
+    border: 1px solid transparent;
+    text-align: center;
+    margin: 0px;
+    padding: 4px auto;
+}
+
+
 
 
 footer {
