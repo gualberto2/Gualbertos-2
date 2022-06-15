@@ -20,8 +20,7 @@ footer {
 
 
 /* NEW AND IMPROVED NAV STUFF HERE */
-
-header {
+head {
     margin: 0px auto;
     padding: 0px auto;
     font-family: 'Oswald', 'Times New Roman', Times, sans-serif;
@@ -43,9 +42,9 @@ ul.navigation {
 }
 /*main nav box */
 
+
+
 /* new improved nav stuff */
-
-
 .gual-logo {
     float: left;
     font-size: 24px;
@@ -73,8 +72,8 @@ ul.navigation {
 }
 
 
-/* for any titles*/
 
+/* for any titles*/
 .header-title {
     text-align: center;
     position: relative;
@@ -90,7 +89,10 @@ ul.navigation {
 #phone-number {
     font-weight: bold;
     font-size: 20px;
+    position: center;
 }
+
+
 
 /* hours styling */ 
 h3.header-hours h4 ul.header-hours li {
@@ -109,6 +111,8 @@ h3.header-hours {
     text-align: center;
     border: 1px solid transparent
 }
+
+
 
 footer {
     border: 1px solid #333;
