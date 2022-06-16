@@ -21,6 +21,11 @@ footer {
 /* NEW AND IMPROVED NAV STUFF HERE */
 
 /* css for all html tags here */
+header,
+footer {
+    margin: 0;
+    padding: 0;
+}
 
 head,
 footer {
@@ -36,11 +41,6 @@ li {
 
 
 /* main nav box */
-header {
-    margin: 0;
-    padding: 0;
-}
-
 ul.navigation {
     box-sizing: border-box;
     padding: 0px;
