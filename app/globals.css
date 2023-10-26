@@ -1,0 +1,239 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "ocomni";
+  src: url("//cdn.fontshare.com/wf/BFBSY7LX5W2U2EROCLVVTQP4VS7S4PC3/IIUX4FGTMD2LK2VWD3RVTAS4SSMUN7B5/53RZKGODFYDW3QHTIL7IPOWTBCSUEZK7.woff2")
+      format("woff2"),
+    url("//cdn.fontshare.com/wf/BFBSY7LX5W2U2EROCLVVTQP4VS7S4PC3/IIUX4FGTMD2LK2VWD3RVTAS4SSMUN7B5/53RZKGODFYDW3QHTIL7IPOWTBCSUEZK7.woff")
+      format("woff"),
+    url("//cdn.fontshare.com/wf/BFBSY7LX5W2U2EROCLVVTQP4VS7S4PC3/IIUX4FGTMD2LK2VWD3RVTAS4SSMUN7B5/53RZKGODFYDW3QHTIL7IPOWTBCSUEZK7.ttf")
+      format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Vincent-Regular";
+  src: url("../public/static/fonts/vincent/vincent-regular.otf");
+}
+
+/* @font-face {
+  font-family: "Vincent-Regular";
+  src: url("https://www.fontsaddict.com/fontface/vincent-regular.otf");
+} */
+
+@font-face {
+  font-family: "Supreme";
+  src: url("//cdn.fontshare.com/wf/DLQ4UJISF7NR5UWCRH7SSBZSGVFYEQVB/ECAFP4IWEYQWGLRGLDAA4D47EQQC2YFW/WC57ME7FJIJNRKIFOCKR52F2X2KO67EO.woff2")
+      format("woff2"),
+    url("//cdn.fontshare.com/wf/DLQ4UJISF7NR5UWCRH7SSBZSGVFYEQVB/ECAFP4IWEYQWGLRGLDAA4D47EQQC2YFW/WC57ME7FJIJNRKIFOCKR52F2X2KO67EO.woff")
+      format("woff"),
+    url("//cdn.fontshare.com/wf/DLQ4UJISF7NR5UWCRH7SSBZSGVFYEQVB/ECAFP4IWEYQWGLRGLDAA4D47EQQC2YFW/WC57ME7FJIJNRKIFOCKR52F2X2KO67EO.ttf")
+      format("truetype");
+  font-weight: 100 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Vincent-Regular", sans-serif;
+}
+
+h4,
+h5,
+h6,
+p,
+a,
+li,
+button,
+Button,
+span {
+  font-family: "Supreme", sans-serif;
+}
+
+.clr-gray {
+  color: #333333;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+.home-cardOne,
+.home-cardTwo,
+.home-cardThree {
+  background-size: cover;
+  background-position: center;
+}
+
+.main-bg {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.6) 8%,
+      rgba(0, 0, 0, 0.1)
+    ),
+    url("https://images1.loopnet.com/i2/gOIlHVTKIqnbNegHiC7vzTEqbSiQJtGUX6kzT_WQNXs/110/5375-Kearny-Villa-Rd-San-Diego-CA-Primary-Photo-1-Large.jpg");
+  background-repeat: no-repeat; /* Prevents background from repeating */
+  background-size: cover; /* Makes the image scale to cover the element */
+  background-position: center; /* Centers the background image */
+}
+
+.home-cardOne {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.5) 10%,
+      rgba(0, 0, 0, 0)
+    ),
+    url("https://lolitasmexicanfood.com/wp-content/uploads/2019/02/familyrun.jpg");
+}
+
+.home-cardTwo {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.5) 10%,
+      rgba(0, 0, 0, 0)
+    ),
+    url("https://lolitasmexicanfood.com/wp-content/uploads/2019/02/classical-recipes.jpg");
+}
+
+.home-cardThree {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 0.5) 10%,
+      rgba(0, 0, 0, 0)
+    ),
+    url("https://lolitasmexicanfood.com/wp-content/uploads/2019/02/peppers.jpg");
+}
+.g-3 {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2) 30%,
+      rgba(0, 0, 0, 0)
+    ),
+    url("https://lh3.googleusercontent.com/proxy/cMzQrZNG4F2MxlLNjwExace2uXX9feGjBRdWHQHpfcCfj1BkC8scZHYHHhIZUkAkoEC4JJKTOsnPM5MiPoM-C2_hUYYmaWFrB1ZbvHqdCR4wrD_5hj1z23LoQOopHhpshgQyf4vfrjHUadxUVz0cpbvO75YS3pFLJm9-og=s1360-w1360-h1020");
+  background-repeat: no-repeat; /* Prevents background from repeating */
+  background-size: cover; /* Makes the image scale to cover the element */
+  background-position: center; /* Centers the background image */
+  /* width: 90vw; */
+}
+.g-1 {
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2) 30%,
+      rgba(0, 0, 0, 0)
+    ),
+    url("https://lh3.googleusercontent.com/p/AF1QipMlWLrnWa_B4BxY7GntlvHfGrrRzb271tG0vI71=s1360-w1360-h1020");
+  background-repeat: no-repeat; /* Prevents background from repeating */
+  background-size: cover; /* Makes the image scale to cover the element */
+  background-position: center; /* Centers the background image */
+  /* width: 90vw; */
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+}
+
+.carousel-slide {
+  display: flex;
+}
+
+.contact-group {
+  border-right: 1px solid black; /* Add a right border to create separation */
+  padding-right: 20px; /* Add some spacing between the text and border */
+  margin-right: 20px; /* Add margin to separate groups */
+}
