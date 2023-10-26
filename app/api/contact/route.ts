@@ -1,15 +1,14 @@
 import ContactForm from "@/app/(dashboard)/(routes)/contact/components/contact-form";
 import formData from "form-data";
 import Mailgun from "mailgun.js";
-import type { NextApiRequest, NextApiResponse } from "next";
-import { NextResponse } from "next/server";
+
+import { NextRequest, NextResponse } from "next/server";
 import moment from "moment";
 import toast from "react-hot-toast";
 
-export async function POST(req: NextApiRequest, res: NextApiResponse) {
+export async function POST(req: NextRequest) {
   try {
-    const body = await req.body;
-    console.log(body);
+    const body = await req.json();
 
     const { first, last, phone, message, email, id, terms } = body;
 
@@ -72,11 +71,12 @@ export async function POST(req: NextApiRequest, res: NextApiResponse) {
     }
 
     if (!first || !last || !phone || !email || !message || !id || !terms) {
-      return res.status(400).json({ error: "All fields are required" });
+      return new NextResponse("All fields are required", { status: 400 });
     }
 
-    return res.json(ContactForm);
+    return NextResponse.json(ContactForm);
   } catch (error) {
-    res.status(500).json({ error: "Server error" });
+    console.error("Error processing request:", error);
+    return new NextResponse("Internal error", { status: 500 });
   }
 }
