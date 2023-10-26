@@ -13,7 +13,7 @@ import { IoFishSharp } from "react-icons/io5";
 import { CiFries } from "react-icons/ci";
 import { TbCheese } from "react-icons/tb";
 import { GiTacos } from "react-icons/gi";
-import { PiForkKnifeBold } from "react-icons/Pi";
+import { PiForkKnifeBold } from "react-icons/pi";
 import { FaHamburger } from "react-icons/fa";
 import { MdLocalDrink } from "react-icons/md";
 import { TbMoodKid } from "react-icons/tb";
