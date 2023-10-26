@@ -45,6 +45,7 @@ import { FaHamburger } from "react-icons/fa";
 import { MdLocalDrink } from "react-icons/md";
 import { TbMoodKid } from "react-icons/tb";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 const Menu = () => {
   return (
@@ -54,7 +55,7 @@ const Menu = () => {
           <h2 className="text-center uppercase font-bold text-3xl pt-8">
             Explore our menu
           </h2>
-          <img
+          <Image
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA-9nB3FuMgiLN66xC3dnacRRJtWSQvAgNA&usqp=CAU"
             alt="Wet Burrito with side of beans and rice topped with cheese"
             className="w-full h-full px-8 py-8"

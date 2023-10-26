@@ -46,7 +46,7 @@ const Delivery = () => {
             </div>
           </div>
           <div className="bg-amber-900 text-white text-center col-start-5 col-end-7 row-span-2 py-16 rounded-xs m-4 shadow-md">
-            <h3 className="text-3xl font-semibol mb-4">Don't forget!</h3>
+            <h3 className="text-3xl font-semibol mb-4">Dont forget!</h3>
             <h4 className="text-2xl flex flex-row items-center justify-center gap-2 font-semibold mb-3">
               <BsCarFrontFill className="text-center " />
               For delivery:
