@@ -11,7 +11,7 @@ const Delivery = () => {
           <p className="text-lg font-light text-center px-6">
             We are passionate about serving delicious, authentic Mexican food to
             generations of guests. The recipes have been crafted through señor
-            Joaquin’s decades of culinary experience, with a touch of innovation
+            Joaquins decades of culinary experience, with a touch of innovation
             from his children. Everything is made fresh daily from scratch, with
             the highest quality, locally sourced ingredients, best quality
             replica watches with the love and care you would expect when your
