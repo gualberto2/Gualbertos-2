@@ -1,14 +1,14 @@
 import ContactForm from "@/app/(dashboard)/(routes)/contact/components/contact-form";
 import formData from "form-data";
 import Mailgun from "mailgun.js";
-import type { NextApiResponse } from "next";
+import type { NextApiRequest, NextApiResponse } from "next";
 import { NextResponse } from "next/server";
 import moment from "moment";
 import toast from "react-hot-toast";
 
-export async function POST(req: Response, res: NextApiResponse) {
+export async function POST(req: NextApiRequest, res: NextApiResponse) {
   try {
-    const body = await req.json();
+    const body = await req.body;
     console.log(body);
 
     const { first, last, phone, message, email, id, terms } = body;
@@ -77,6 +77,6 @@ export async function POST(req: Response, res: NextApiResponse) {
 
     return NextResponse.json(ContactForm);
   } catch (error) {
-    return new NextResponse("Internal error", { status: 500 });
+    res.status(500).json({ error: "Server error" });
   }
 }
