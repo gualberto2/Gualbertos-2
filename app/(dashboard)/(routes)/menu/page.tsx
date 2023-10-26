@@ -61,12 +61,12 @@ const Menu = () => {
             className="w-full h-full px-8 py-8"
           />
           <p className=" pb-4 font-extralight text-lg px-6">
-            We are passionate about serving delicious, authentic Mexican food to
-            generations of guests. The recipes have been crafted through señor
-            Joaquin’s decades of culinary experience, with a touch of innovation
-            from his children. Everything is made fresh daily from scratch, with
-            the highest quality, locally sourced ingredients, best quality
-            replica watches with the love and care you would expect when your
+            Serving San Diego delicious, authentic Mexican food to generations
+            of guests. Recipes past down through the family and decades of
+            culinary experience, Gualbertos provides decades of culinary
+            experience with a touch of Michoacan flavor. Everything made fresh
+            daily from scratch, with the highest quality, locally sourced
+            ingredients, with the love and care you would expect when your
             family is making a meal.
           </p>
           <div className="mx-auto flex flex-row justify-center gap-2 mb-16">
@@ -93,7 +93,7 @@ const Menu = () => {
             <AccordionContent className="px-12">
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3">
-                  served with rice and beans
+                  Served with rice and beans
                 </h4>
                 {comboPlates.map((item) => (
                   <div className="flex flex-col" key={item.id}>
@@ -121,9 +121,7 @@ const Menu = () => {
             </AccordionTrigger>
             <AccordionContent className="px-12">
               <div className="">
-                <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3">
-                  served with rice and beans
-                </h4>
+                <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {breakfast.map((item) => (
                   <div className="flex flex-col" key={item.id}>
                     <Separator />
@@ -190,7 +188,7 @@ const Menu = () => {
             <AccordionContent className="px-12">
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3">
-                  served with rice and beans
+                  Served with rice and beans
                 </h4>
                 {breakfastBurritos.map((item) => (
                   <div className="flex flex-col" key={item.id}>
