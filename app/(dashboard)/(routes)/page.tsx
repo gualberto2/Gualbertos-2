@@ -7,7 +7,10 @@ import { TbMailbox } from "react-icons/tb";
 import Carousel from "@/components/carousel";
 
 const locations = [
-  <div className="g-3 h-[700px] w-full  flex flex-col justify-end text-center text-white pb-8">
+  <div
+    className="g-3 h-[700px] w-full  flex flex-col justify-end text-center text-white pb-8 "
+    key="gbertos-3"
+  >
     <h2 className="text-3xl font-bold">Gualberto's 3{/*  */}</h2>
     <p className="flex flex-col tracking-wide font-light text-lg cursor-pointer px-6">
       <span className="tracking-wide font-light text-lg  px-6">
@@ -18,7 +21,10 @@ const locations = [
       </span>
     </p>
   </div>,
-  <div className="g-1 h-[700px] w-full flex flex-col justify-end text-center text-white pb-8">
+  <div
+    className="g-1 h-[700px] w-full flex flex-col justify-end text-center text-white pb-8"
+    key="gbertos-2"
+  >
     <h2 className="text-3xl font-bold">Gualberto's 1</h2>
     <p className="flex flex-col tracking-wide font-light text-lg cursor-pointer px-6">
       <span className="tracking-wide font-light text-lg  px-6">
