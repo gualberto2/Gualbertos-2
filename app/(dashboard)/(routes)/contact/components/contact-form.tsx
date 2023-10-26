@@ -47,14 +47,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSuccessfulSubmit }) => {
   const [id, setId] = useState("");
   const [captcha, setCaptcha] = useState(false);
 
-  useEffect(() => {
-    const newId = ` ${uuidv4()}`;
-    setId(newId);
-    form.setValue("id", newId);
-  }, []);
-
-  const router = useRouter();
-
   const defaultValues = {
     first: "",
     last: "",
@@ -69,6 +61,14 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSuccessfulSubmit }) => {
     resolver: zodResolver(formSchema),
     defaultValues,
   });
+
+  useEffect(() => {
+    const newId = ` ${uuidv4()}`;
+    setId(newId);
+    form.setValue("id", newId);
+  }, [form]);
+
+  const router = useRouter();
 
   const onSubmit = async (data: z.infer<typeof formSchema>) => {
     try {
