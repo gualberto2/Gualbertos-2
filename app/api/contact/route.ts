@@ -72,10 +72,10 @@ export async function POST(req: NextApiRequest, res: NextApiResponse) {
     }
 
     if (!first || !last || !phone || !email || !message || !id || !terms) {
-      return new NextResponse("All fields are required", { status: 400 });
+      return res.status(400).json({ error: "All fields are required" });
     }
 
-    return NextResponse.json(ContactForm);
+    return res.json(ContactForm);
   } catch (error) {
     res.status(500).json({ error: "Server error" });
   }
