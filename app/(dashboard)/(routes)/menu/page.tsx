@@ -96,7 +96,7 @@ const Menu = () => {
                   served with rice and beans
                 </h4>
                 {comboPlates.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -125,7 +125,7 @@ const Menu = () => {
                   served with rice and beans
                 </h4>
                 {breakfast.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -193,7 +193,7 @@ const Menu = () => {
                   served with rice and beans
                 </h4>
                 {breakfastBurritos.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -220,7 +220,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {enchiladas.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -247,7 +247,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {tostadas.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -273,7 +273,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {gualbertosSpecialty.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -339,7 +339,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {burritos.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -365,7 +365,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {soups.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -391,7 +391,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {seafood.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -417,7 +417,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {carneasadaFries.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -443,7 +443,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {surfAndTurfFries.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -469,7 +469,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {tortas.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -495,7 +495,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {chips.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -521,7 +521,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {quesadillas.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -548,7 +548,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {superQuesadillas.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -575,7 +575,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {tacos.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -602,7 +602,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {extra.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -629,7 +629,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {chimichangas.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -656,7 +656,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {hamburgers.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -683,7 +683,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {salads.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -710,7 +710,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {partyPacks.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -737,7 +737,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {drinks.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
@@ -764,7 +764,7 @@ const Menu = () => {
               <div className="">
                 <h4 className="font-semibold text-gray-500/50 text-center uppercase mb-3"></h4>
                 {kidsMenu.map((item) => (
-                  <div className="flex flex-col">
+                  <div className="flex flex-col" key={item.id}>
                     <Separator />
                     <div className="flex-flex-col hover:bg-gray-100 transition duration-150 ease-in-out">
                       <div className="flex flex-row justify-between items-center my-4 px-4">
