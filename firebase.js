@@ -3,13 +3,12 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAubH54vMQYgA65L8x_uxCwIYXxcc51cFc",
-  authDomain: "gualbertos-2.firebaseapp.com",
-  projectId: "gualbertos-2",
-  storageBucket: "gualbertos-2.appspot.com",
-  messagingSenderId: "646231085080",
-  appId: "1:646231085080:web:0fa1523d6e7e9ddc1df36d",
-  measurementId: "G-0BCE0C1TC7",
+  apiKey: "AIzaSyA03XEDvDeqQTZRAFY1-hiGMfXEvOxOmA8",
+  authDomain: "gbertos-43036.firebaseapp.com",
+  projectId: "gbertos-43036",
+  storageBucket: "gbertos-43036.appspot.com",
+  messagingSenderId: "603959134679",
+  appId: "1:603959134679:web:c42b675f2ffaa20f9aa392",
 };
 
 export const app = initializeApp(firebaseConfig);
