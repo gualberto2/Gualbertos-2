@@ -161,7 +161,7 @@ span {
       rgba(0, 0, 0, 0.6) 8%,
       rgba(0, 0, 0, 0.1)
     ),
-    url("https://images1.loopnet.com/i2/gOIlHVTKIqnbNegHiC7vzTEqbSiQJtGUX6kzT_WQNXs/110/5375-Kearny-Villa-Rd-San-Diego-CA-Primary-Photo-1-Large.jpg");
+    url("https://res.cloudinary.com/dazkujlz2/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1702402313/yx7rjj5mxu7b88ezeyrr.jpg?_s=public-apps");
   background-repeat: no-repeat; /* Prevents background from repeating */
   background-size: cover; /* Makes the image scale to cover the element */
   background-position: center; /* Centers the background image */
