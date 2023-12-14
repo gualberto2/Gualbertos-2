@@ -45,6 +45,7 @@ import { FaHamburger } from "react-icons/fa";
 import { MdLocalDrink } from "react-icons/md";
 import { TbMoodKid } from "react-icons/tb";
 import { Button } from "@/components/ui/button";
+import CateringMenu from "./components/catering-button";
 import Image from "next/image";
 
 const Menu = () => {
@@ -55,10 +56,10 @@ const Menu = () => {
           <h2 className="text-center uppercase font-bold text-3xl pt-8">
             Explore our menu
           </h2>
-          <Image
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA-9nB3FuMgiLN66xC3dnacRRJtWSQvAgNA&usqp=CAU"
+          <img
+            src="https://s3-media0.fl.yelpcdn.com/bphoto/2pEw64yDEgCOYVkXkWO3OQ/l.jpg"
             alt="Wet Burrito with side of beans and rice topped with cheese"
-            className="w-full h-full px-8 py-8"
+            className="w-full px-8 py-8"
           />
           <p className=" pb-4 font-extralight text-lg px-6">
             Serving San Diego delicious, authentic Mexican food to generations
@@ -73,12 +74,7 @@ const Menu = () => {
             <Button className="bg-green-800 hover:bg-green-600">
               Order Online
             </Button>
-            <Button
-              variant="outline"
-              className="border-green-800 text-green-800 hover:bg-green-100"
-            >
-              Catering
-            </Button>
+            <CateringMenu />
           </div>
         </div>
         <Separator />
