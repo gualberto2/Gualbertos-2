@@ -57,9 +57,12 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row justify-between items-center text-lg px-6 mb-16">
           <div className="mb-8">
             <h4 className="font-light">General Information/Comments:</h4>
-            <p className="font-semibold hover:underline cursor-pointer tracking-wide">
+            <a
+              href="mailto:support@gualbertos2.com"
+              className="font-semibold hover:underline cursor-pointer tracking-wide"
+            >
               contact@gualbertos2.com
-            </p>
+            </a>
           </div>
           <div className="hidden md:block md:border border-black h-24"></div>
           <div className="mb-8">

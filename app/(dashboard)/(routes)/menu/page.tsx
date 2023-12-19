@@ -74,7 +74,7 @@ const Menu = () => {
             <Button className="bg-green-800 hover:bg-green-600">
               Order Online
             </Button>
-            <CateringMenu />
+            <CateringMenu className="hover:bg-green-200 transition duration-200 ease-in-out" />
           </div>
         </div>
         <Separator />

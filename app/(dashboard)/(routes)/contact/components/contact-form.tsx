@@ -74,7 +74,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSuccessfulSubmit }) => {
     try {
       setLoading(true);
 
-      // Add the form data to Firebase with the generated contactId
       const docRef = await addDoc(collection(fDb, "contact_message"), {
         ...data,
       });
