@@ -2,10 +2,12 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-
-import { TbMailbox } from "react-icons/tb";
+import Subscribe from "@/components/subscribe";
 import Carousel from "@/components/carousel";
+
 import Link from "next/link";
+
+import { FormData } from "@/components/subscribe";
 
 const locations = [
   <div
@@ -65,6 +67,10 @@ const locations = [
 ];
 
 const Home = () => {
+  const handleSuccessfulSubmit = (data: FormData) => {
+    console.log("Form submitted successfully with data:", data);
+    // You can implement any logic you want here after successful form submission
+  };
   return (
     <section className="">
       <div className=" mx-auto text-center py-12 h-[600px] object-fit main-bg flex flex-col justify-center text-white items-center">
@@ -149,26 +155,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="bg-green-800 py-8 ">
-        <div className="max-w-xl mx-auto py-16 flex flex-col items-center px-8">
-          <p className="text-center text-6xl mb-8">
-            <TbMailbox className=" text-white" />
-          </p>
-          <h2 className="text-white uppercase text-3xl tracking-wide font-semibold text-center mb-12">
-            Sign up free for future offers and deals!
-          </h2>
-          <div className="md:col-start-1 md:col-end-5 flex flex-col md:flex-row items-center">
-            <input
-              type="email"
-              className="pr-20 pl-4 py-2 bg-transparent border text-white placeholder-white rounded w-full  border-l-lg focus:outline-none md:rounded-r-none md:focus:ring-0"
-              placeholder="Type email here"
-            />
-
-            <Button className="rounded uppercase bg-white border border-white hover:bg-transparent text-black hover:text-white w-full mt-4 md:mt-0 md:w-28 whitespace-nowrap py-5 md:rounded-r-lg md:rounded-l-none">
-              Subscribe
-            </Button>
-          </div>
-        </div>
+      <div>
+        <Subscribe onSuccessfulSubmit={handleSuccessfulSubmit} />
       </div>
       <div className="mx-auto max-w-6xl py-20">
         <h3 className="text-center mb-16 font-semibold text-3xl">
