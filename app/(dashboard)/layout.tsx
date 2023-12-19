@@ -1,6 +1,7 @@
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import PoweredByOcomni from "@/components/powered-by";
+import { Toaster } from "@/components/ui/toaster";
 
 export default async function DashboardLayout({
   children,
@@ -19,6 +20,7 @@ export default async function DashboardLayout({
       >
         {children}
       </div>
+      <Toaster />
       <Footer />
       <PoweredByOcomni />
     </>
