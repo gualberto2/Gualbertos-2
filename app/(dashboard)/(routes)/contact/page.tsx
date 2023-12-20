@@ -4,6 +4,7 @@ import { useState } from "react";
 import ContactForm from "./components/contact-form";
 
 import { AiFillCheckCircle } from "react-icons/ai";
+import Link from "next/link";
 
 type SuccessProps = {
   first: string;
@@ -58,7 +59,7 @@ const Contact = () => {
           <div className="mb-8">
             <h4 className="font-light">General Information/Comments:</h4>
             <a
-              href="mailto:support@gualbertos2.com"
+              href="mailto:contact@gualbertos2.com"
               className="font-semibold hover:underline cursor-pointer tracking-wide"
             >
               contact@gualbertos2.com
@@ -66,21 +67,31 @@ const Contact = () => {
           </div>
           <div className="hidden md:block md:border border-black h-24"></div>
           <div className="mb-8">
-            <p className="flex flex-col tracking-wide font-light text-lg cursor-pointer px-6 line-clamp-2 hover:underline">
-              <span className="tracking-wide  font-light">
-                5447 Kearny Villa Rd
-              </span>{" "}
-              <span className="tracking-wide font-light">
-                San Diego, CA 92123
-              </span>
-            </p>
+            <Link
+              href="https://www.google.com/maps/dir/?api=1&destination=5447+Kearny+Villa+Rd,+San+Diego,+CA+92123"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p className="flex flex-col tracking-wide font-light text-lg cursor-pointer px-6 line-clamp-2 hover:underline">
+                <span className="tracking-wide  font-light">
+                  5447 Kearny Villa Rd
+                </span>{" "}
+                <span className="tracking-wide font-light">
+                  San Diego, CA 92123
+                </span>
+              </p>
+            </Link>
           </div>
           <div className="hidden md:block md:border border-black h-24"></div>
           <div className="mb-8">
             <h4 className="font-light">Catering and Events:</h4>
-            <p className="font-semibold hover:underline cursor-pointer tracking-wide">
-              events@gualbertos2.com
-            </p>
+            <a
+              href="mailto:support@gualbertos2.com "
+              className="font-semibold hover:underline cursor-pointer tracking-wide"
+            >
+              {/* &subject=Events & Catering */}
+              support@gualbertos2.com
+            </a>
           </div>
         </div>
 
