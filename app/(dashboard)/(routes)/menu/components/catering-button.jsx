@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -10,6 +9,10 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
+
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoIosText } from "react-icons/io";
+import { MdEmail } from "react-icons/md";
 
 const CateringMenu = ({ className }) => {
   return (
@@ -21,9 +24,13 @@ const CateringMenu = ({ className }) => {
         <DropdownMenuLabel>Contact</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuItem>
-          <div className="flex flex-row justify-between gap-2">
+          <div className="flex flex-row justify-between gap-8">
             <h4>Call:</h4>
-            <Link href="tel:+18582683209" className="">
+            <Link
+              href="tel:+18582683209"
+              className="flex flex-row justify-between items-center gap-2"
+            >
+              <FaPhoneAlt />
               (858) 268-3209
             </Link>
           </div>
@@ -31,13 +38,25 @@ const CateringMenu = ({ className }) => {
         <DropdownMenuItem>
           <div className="flex flex-row justify-between gap-2">
             <h4>Email:</h4>
-            <p>juans@gualbertos2.com</p>
+            <Link
+              href="mailto:support@gualbertos2.com"
+              className="flex flex-row justify-between items-center gap-2"
+            >
+              <MdEmail />
+              <p>juans@gualbertos2.com</p>
+            </Link>
           </div>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <div className="flex flex-row justify-between gap-2">
+          <div className="flex flex-row justify-between gap-8">
             <h4>Text: </h4>
-            <p>(858) 268-3209</p>
+            <Link
+              href="sms:+18582683209"
+              className="flex flex-row justify-between items-center gap-2"
+            >
+              <IoIosText />
+              <p>(858) 268-3209</p>
+            </Link>
           </div>
         </DropdownMenuItem>
       </DropdownMenuContent>
