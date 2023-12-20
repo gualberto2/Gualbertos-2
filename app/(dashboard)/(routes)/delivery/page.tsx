@@ -33,7 +33,7 @@ const Delivery = () => {
           </p>
         </div>
         <div className="flex flex-col  gap-12 px-8 py-20">
-          <div className=" mx-4 flex flex-row justify-around">
+          <div className=" mx-4 flex flex-col sm:flex-row justify-around">
             <div className="flex flex-col items-center align-center mb-6 ">
               <Link
                 href="https://www.grubhub.com/restaurant/gualbertos-taco-shop-2-5447-kearny-villa-rd-san-diego/2215802"
