@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { ToasterProvider } from "@/providers/toast-provider";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Gualbertos 2",
@@ -24,6 +25,7 @@ export default function RootLayout({
         {" "}
         <ToasterProvider />
         {children}
+        <Analytics />
       </body>
     </html>
   );
