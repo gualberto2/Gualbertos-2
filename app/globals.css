@@ -161,7 +161,7 @@ span {
     url("/images/home/order-now.jpg");
   background-repeat: no-repeat; /* Prevents background from repeating */
   background-size: cover; /* Makes the image scale to cover the element */
-  background-position: center; /* Centers the background image */
+  background-position: center 22%;
 }
 
 .home-cardOne {
@@ -171,7 +171,7 @@ span {
       rgba(0, 0, 0, 0.5) 10%,
       rgba(0, 0, 0, 0)
     ),
-    url("/images/home/family-run.jpg");
+    url("/images/home/family-run-michoacan.png");
 }
 
 .home-cardTwo {
@@ -181,7 +181,7 @@ span {
       rgba(0, 0, 0, 0.5) 10%,
       rgba(0, 0, 0, 0)
     ),
-    url("/images/home/order-online.jpg");
+    url("/images/home/order-online-register.png");
 }
 
 .home-cardThree {
