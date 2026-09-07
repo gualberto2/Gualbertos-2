@@ -91,7 +91,7 @@ const Subscribe: React.FC<SubscribeFormProps> = ({ onSuccessfulSubmit }) => {
                 <div className="md:col-start-1 md:col-end-5 flex flex-col md:flex-row items-center">
                   <Input
                     type="email"
-                    className="pr-20 pl-4 py-2 bg-transparent border text-white placeholder-white rounded w-full  border-l-lg focus:outline-none md:rounded-r-none md:focus:ring-0"
+                    className="pr-20 pl-4 py-2 bg-transparent border text-white placeholder:text-white rounded w-full border-l-lg focus:outline-none md:rounded-r-none md:focus:ring-0"
                     placeholder="Type email here"
                     {...field}
                   />

@@ -2,17 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "ocomni";
-  src: url("//cdn.fontshare.com/wf/BFBSY7LX5W2U2EROCLVVTQP4VS7S4PC3/IIUX4FGTMD2LK2VWD3RVTAS4SSMUN7B5/53RZKGODFYDW3QHTIL7IPOWTBCSUEZK7.woff2")
-      format("woff2"),
-    url("//cdn.fontshare.com/wf/BFBSY7LX5W2U2EROCLVVTQP4VS7S4PC3/IIUX4FGTMD2LK2VWD3RVTAS4SSMUN7B5/53RZKGODFYDW3QHTIL7IPOWTBCSUEZK7.woff")
-      format("woff"),
-    url("//cdn.fontshare.com/wf/BFBSY7LX5W2U2EROCLVVTQP4VS7S4PC3/IIUX4FGTMD2LK2VWD3RVTAS4SSMUN7B5/53RZKGODFYDW3QHTIL7IPOWTBCSUEZK7.ttf")
-      format("truetype");
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
+::selection {
+  background-color: #166534;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: #166534;
+  color: #ffffff;
 }
 
 @font-face {
@@ -161,7 +158,7 @@ span {
       rgba(0, 0, 0, 0.6) 8%,
       rgba(0, 0, 0, 0.1)
     ),
-    url("https://res.cloudinary.com/dazkujlz2/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1702402313/yx7rjj5mxu7b88ezeyrr.jpg?_s=public-apps");
+    url("/images/home/order-now.jpg");
   background-repeat: no-repeat; /* Prevents background from repeating */
   background-size: cover; /* Makes the image scale to cover the element */
   background-position: center; /* Centers the background image */
@@ -174,7 +171,7 @@ span {
       rgba(0, 0, 0, 0.5) 10%,
       rgba(0, 0, 0, 0)
     ),
-    url("https://res.cloudinary.com/dazkujlz2/image/upload/v1705510333/i9bufu4ngmwsk9df78kg.jpg");
+    url("/images/home/family-run.jpg");
 }
 
 .home-cardTwo {
@@ -184,7 +181,7 @@ span {
       rgba(0, 0, 0, 0.5) 10%,
       rgba(0, 0, 0, 0)
     ),
-    url("https://res.cloudinary.com/dazkujlz2/image/upload/v1705510387/u9tyumwdgfvgxahnbboe.jpg");
+    url("/images/home/order-online.jpg");
 }
 
 .home-cardThree {
@@ -194,7 +191,7 @@ span {
       rgba(0, 0, 0, 0.5) 10%,
       rgba(0, 0, 0, 0)
     ),
-    url("https://lolitasmexicanfood.com/wp-content/uploads/2019/02/peppers.jpg");
+    url("/images/home/truly-fresh.jpg");
 }
 .g-3 {
   background-image: linear-gradient(

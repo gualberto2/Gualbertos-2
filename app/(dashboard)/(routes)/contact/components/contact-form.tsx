@@ -14,7 +14,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { addDoc, collection } from "firebase/firestore";
 import { fDb } from "@/firebase";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import toast from "react-hot-toast";
@@ -44,7 +44,7 @@ const formSchema = z.object({
 
 const ContactForm: React.FC<ContactFormProps> = ({ onSuccessfulSubmit }) => {
   const [loading, setLoading] = useState(false);
-  const [id, setId] = useState("");
+  const [formId] = useState(() => ` ${uuidv4()}`);
   const [captcha, setCaptcha] = useState(false);
 
   const defaultValues = {
@@ -53,7 +53,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSuccessfulSubmit }) => {
     email: "",
     phone: "",
     message: "",
-    id: "",
+    id: formId,
     terms: false,
   };
 
@@ -61,12 +61,6 @@ const ContactForm: React.FC<ContactFormProps> = ({ onSuccessfulSubmit }) => {
     resolver: zodResolver(formSchema),
     defaultValues,
   });
-
-  useEffect(() => {
-    const newId = ` ${uuidv4()}`;
-    setId(newId);
-    form.setValue("id", newId);
-  }, [form]);
 
   const router = useRouter();
 

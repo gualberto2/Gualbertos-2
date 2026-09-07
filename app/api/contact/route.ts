@@ -21,8 +21,8 @@ export async function POST(req: NextRequest) {
     const date = moment().format("MMMM Do YYYY, h:mm:ss a");
 
     const messageData = {
-      from: `support@gualbertos2.com`,
-      to: `support@gualbertos2.com`,
+      from: `hello@gualbertos2.com`,
+      to: `hello@gualbertos2.com`,
       subject: `Support ticket for ${first}, ID:${id}`,
       text: `${first} ${last}, ID: ${id}, email: ${email}
       
@@ -43,7 +43,7 @@ export async function POST(req: NextRequest) {
     }
 
     const confirmationMessageData = {
-      from: `support@gualbertos2.com`,
+      from: `hello@gualbertos2.com`,
       to: email,
       subject: `Confirmation of your support ticket submission`,
       text: `Hello ${first} ${last},

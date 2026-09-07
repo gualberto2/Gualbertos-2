@@ -55,24 +55,26 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="flex flex-col md:flex-row justify-between items-center text-lg px-6 mb-16">
-          <div className="mb-8">
-            <h4 className="font-light">General Information/Comments:</h4>
+        <div className="grid grid-cols-1 items-center gap-8 px-6 text-lg md:grid-cols-[1fr_auto_1fr] md:gap-10 mb-16">
+          <div className="flex flex-col items-center text-center">
+            <h4 className="font-light">
+              General Information, Comments, Catering and Events:
+            </h4>
             <a
-              href="mailto:contact@gualbertos2.com"
+              href="mailto:hello@gualbertos2.com"
               className="font-semibold hover:underline cursor-pointer tracking-wide"
             >
-              contact@gualbertos2.com
+              hello@gualbertos2.com
             </a>
           </div>
-          <div className="hidden md:block md:border border-black h-24"></div>
-          <div className="mb-8">
+          <div className="hidden h-24 border-l border-black md:block"></div>
+          <div className="flex justify-center text-center">
             <Link
               href="https://www.google.com/maps/dir/?api=1&destination=5447+Kearny+Villa+Rd,+San+Diego,+CA+92123"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <p className="flex flex-col tracking-wide font-light text-lg cursor-pointer px-6 line-clamp-2 hover:underline">
+              <p className="flex flex-col tracking-wide font-light text-lg cursor-pointer hover:underline">
                 <span className="tracking-wide  font-light">
                   5447 Kearny Villa Rd
                 </span>{" "}
@@ -81,17 +83,6 @@ const Contact = () => {
                 </span>
               </p>
             </Link>
-          </div>
-          <div className="hidden md:block md:border border-black h-24"></div>
-          <div className="mb-8">
-            <h4 className="font-light">Catering and Events:</h4>
-            <a
-              href="mailto:support@gualbertos2.com "
-              className="font-semibold hover:underline cursor-pointer tracking-wide"
-            >
-              {/* &subject=Events & Catering */}
-              support@gualbertos2.com
-            </a>
           </div>
         </div>
 

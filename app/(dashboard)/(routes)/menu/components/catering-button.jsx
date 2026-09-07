@@ -39,11 +39,11 @@ const CateringMenu = ({ className }) => {
           <div className="flex flex-row justify-between gap-2">
             <h4>Email:</h4>
             <Link
-              href="mailto:support@gualbertos2.com"
+              href="mailto:hello@gualbertos2.com"
               className="flex flex-row justify-between items-center gap-2"
             >
               <MdEmail />
-              <p>juans@gualbertos2.com</p>
+              <p>hello@gualbertos2.com</p>
             </Link>
           </div>
         </DropdownMenuItem>

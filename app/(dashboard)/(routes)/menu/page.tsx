@@ -46,7 +46,8 @@ import { MdLocalDrink } from "react-icons/md";
 import { TbMoodKid } from "react-icons/tb";
 import { Button } from "@/components/ui/button";
 import CateringMenu from "./components/catering-button";
-import Image from "next/image";
+import Link from "next/link";
+import { ORDER_ONLINE_URL } from "@/lib/links";
 
 const Menu = () => {
   return (
@@ -56,12 +57,7 @@ const Menu = () => {
           <h2 className="text-center uppercase font-bold text-3xl pt-8">
             Explore our menu
           </h2>
-          <img
-            src="https://s3-media0.fl.yelpcdn.com/bphoto/2pEw64yDEgCOYVkXkWO3OQ/l.jpg"
-            alt="Wet Burrito with side of beans and rice topped with cheese"
-            className="w-full px-8 py-8"
-          />
-          <p className=" pb-4 font-extralight text-lg px-6">
+          <p className="px-6 py-8 text-lg font-extralight">
             Serving San Diego delicious, authentic Mexican food to generations
             of guests. Recipes past down through the family and decades of
             culinary experience, Gualbertos provides decades of culinary
@@ -71,8 +67,8 @@ const Menu = () => {
             family is making a meal.
           </p>
           <div className="mx-auto flex flex-row justify-center gap-2 mb-16">
-            <Button className="bg-green-800 hover:bg-green-600">
-              Order Online
+            <Button asChild className="bg-green-800 hover:bg-green-600">
+              <Link href={ORDER_ONLINE_URL}>Order Online</Link>
             </Button>
             <CateringMenu className="hover:bg-green-200 transition duration-200 ease-in-out" />
           </div>
